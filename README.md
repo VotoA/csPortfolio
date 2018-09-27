@@ -1,7 +1,7 @@
 # csPortfolio
-* WebPage here
-* Lightning here
-* Lightning JS here
+* WebPage [here] (https://github.com/VotoA/lightning2/blob/gh-pages/Lightning.pde "https://github.com/VotoA/lightning2/blob/gh-pages/Lightning.pde")
+* Lightning [here] (https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js "https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js")
+* Lightning JS [here] (https://votoa.github.io/lightning2/ "https://votoa.github.io/lightning2/")
 
 ~~~~
 int StartX = 0;
