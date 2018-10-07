@@ -3,7 +3,7 @@
 * WebPage [here](https://votoa.github.io/VotoTestWebPage/Testpage.html)
 * Lightning [here](https://votoa.github.io/lightning2/)
 * JSLighting [here](https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js)
-* Dice [here}(https://votoa.github.io/dice3/)
+* Dice [here](https://votoa.github.io/dice3/)
 
 ```Java
 while(EndX <= 600)
