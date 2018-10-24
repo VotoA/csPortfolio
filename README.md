@@ -4,6 +4,7 @@
 * Lightning [here](https://votoa.github.io/lightning2/)
 * JSLighting [here](https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js)
 * Dice [here](https://votoa.github.io/dice3/)
+* Chemotaxis [here](https://github.com/VotoA/chemotaxis4)
 
 ```Java
 while(EndX <= 600)
