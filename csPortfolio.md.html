@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>csPortfolio.md</title><style></style></head><body id="preview">
+<h1><a id="csPortfolio_0"></a>csPortfolio</h1>
+<ul>
+<li>WebPage <a href="https://votoa.github.io/VotoTestWebPage/Testpage.html">here</a></li>
+<li>Lightning <a href="https://votoa.github.io/lightning2/">here</a></li>
+<li>JSLighting <a href="https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js">here</a></li>
+<li>Dice <a href="https://votoa.github.io/dice3/">here</a></li>
+<li>Chemotaxis <a href="https://github.com/VotoA/chemotaxis4">here</a></li>
+<li>Northeastern University <a href="https://docs.google.com/presentation/d/1B0AklL4DaVBu_SNV7Yo8TksOEy3wpoK8pM0MM-cFAtA/edit?usp=sharing">here</a></li>
+<li>Starfield <a href="https://github.com/VotoA/starfield5">here</a></li>
+</ul>
+<pre><code class="language-Java"><span class="hljs-keyword">while</span>(EndX &lt;= <span class="hljs-number">600</span>)
+    {
+        EndX = StartX + (<span class="hljs-keyword">int</span>)(Math.random()*<span class="hljs-number">10</span>);
+        EndY = StartY + (<span class="hljs-keyword">int</span>)(Math.random()*<span class="hljs-number">31</span>)-<span class="hljs-number">15</span>;
+        line(StartX, StartY, EndX, EndY);
+        <span class="hljs-comment">//Down</span>
+        line(EndX, EndY, EndX, <span class="hljs-number">600</span>);
+        line((StartX+EndX)/<span class="hljs-number">2</span>, (StartY+EndY)/<span class="hljs-number">2</span>, (StartX+EndX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
+        line((((StartX+EndX)/<span class="hljs-number">2</span>)+StartX)/<span class="hljs-number">2</span>, (((StartY+EndY)/<span class="hljs-number">2</span>)+StartY)/<span class="hljs-number">2</span>, (((StartX+EndX)/<span class="hljs-number">2</span>)+StartX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
+        line((((StartX+EndX)/<span class="hljs-number">2</span>)+EndX)/<span class="hljs-number">2</span>, (((StartY+EndY)/<span class="hljs-number">2</span>)+EndY)/<span class="hljs-number">2</span>, (((StartX+EndX)/<span class="hljs-number">2</span>)+EndX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
+        <span class="hljs-comment">//Right</span>
+        <span class="hljs-comment">//line(EndX, EndY, 600, EndY);</span>
+        <span class="hljs-comment">//line((StartX+EndX)/2, (StartY+EndY)/2, 600, (StartY+EndY)/2);</span>
+        <span class="hljs-comment">//line((((StartX+EndX)/2)+StartX)/2, (((StartY+EndY)/2)+StartY)/2, 600, (((StartY+EndY)/2)+StartY)/2);</span>
+        <span class="hljs-comment">//line((((StartX+EndX)/2)+EndX)/2, (((StartY+EndY)/2)+EndY)/2, 600, (((StartY+EndY)/2)+EndY)/2);</span>
+        StartX = EndX;
+        StartY = EndY;
+    }
+}
+</code></pre>
+
+</body></html>
