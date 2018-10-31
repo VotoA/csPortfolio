@@ -5,6 +5,8 @@
 * JSLighting [here](https://github.com/VotoA/lightning2/blob/gh-pages/LightningJS.js)
 * Dice [here](https://votoa.github.io/dice3/)
 * Chemotaxis [here](https://github.com/VotoA/chemotaxis4)
+* Northeastern University [here](https://docs.google.com/presentation/d/1B0AklL4DaVBu_SNV7Yo8TksOEy3wpoK8pM0MM-cFAtA/edit?usp=sharing)
+* Starfield [here](https://github.com/VotoA/starfield5)
 
 ```Java
 while(EndX <= 600)
