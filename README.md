@@ -9,23 +9,58 @@
 * Starfield [here](https://github.com/VotoA/starfield5)
 
 ```Java
-while(EndX <= 600)
-    {
-        EndX = StartX + (int)(Math.random()*10);
-        EndY = StartY + (int)(Math.random()*31)-15;
-        line(StartX, StartY, EndX, EndY);
-        //Down
-        line(EndX, EndY, EndX, 600);
-        line((StartX+EndX)/2, (StartY+EndY)/2, (StartX+EndX)/2, 600);
-        line((((StartX+EndX)/2)+StartX)/2, (((StartY+EndY)/2)+StartY)/2, (((StartX+EndX)/2)+StartX)/2, 600);
-        line((((StartX+EndX)/2)+EndX)/2, (((StartY+EndY)/2)+EndY)/2, (((StartX+EndX)/2)+EndX)/2, 600);
-        //Right
-        //line(EndX, EndY, 600, EndY);
-        //line((StartX+EndX)/2, (StartY+EndY)/2, 600, (StartY+EndY)/2);
-        //line((((StartX+EndX)/2)+StartX)/2, (((StartY+EndY)/2)+StartY)/2, 600, (((StartY+EndY)/2)+StartY)/2);
-        //line((((StartX+EndX)/2)+EndX)/2, (((StartY+EndY)/2)+EndY)/2, 600, (((StartY+EndY)/2)+EndY)/2);
-        StartX = EndX;
-        StartY = EndY;
+  void move()
+  {
+    Position close = new Position(1600, 1600);
+    float dclose = sqrt(close.getX()*close.getX()+close.getY()*close.getY());
+    ArrayList<Food> a = getArrayf();
+    for(int i = 0; i < getArrayf().size(); i++)
+    { 
+      int x = a.get(i).getPos().getX();
+      int y = a.get(i).getPos().getY();
+      int xDiff = x-p.getX();
+      int yDiff = y-p.getY();
+      float dfood = sqrt(xDiff*xDiff+yDiff*yDiff);
+      if(dfood < size/2)
+      {
+        a.get(i).newPos();
+        changeSize();
+      }
+      if(dfood < dclose)
+      {
+        close.changeX(xDiff);
+        close.changeY(yDiff);
+        dclose = dfood;
+      }
     }
+    float angle;
+    if(close.getX()==0){
+      if(close.getY()>0){
+        angle = PI/2;
+      } else
+      {
+        angle = -PI/2;
+      }
+    } else
+    {
+      angle = atan(abs(close.getY())/abs(close.getX()));
+    }
+    if(close.getY()<0 && close.getX()<0)
+    {
+      angle += PI;
+    } 
+    else if (close.getY()<0 && close.getX()>0)
+    {
+      angle -= 2*angle;
+    } 
+    else if (close.getY()>0 && close.getX()<0)
+    {
+      angle = PI-angle;
+    }
+    p.changeX(p.getX()+(int)round(3*cos(angle)));
+    p.changeY(p.getY()+(int)round(3*sin(angle)));
+    fill(c);
+    ellipse(p.getX(), p.getY(), size, size);
+  }
 }
 ```
