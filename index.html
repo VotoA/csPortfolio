@@ -11,21 +11,60 @@
 </ul>
 <pre><code class="language-Java"><span class="hljs-keyword">while</span>(EndX &lt;= <span class="hljs-number">600</span>)
     {
-        EndX = StartX + (<span class="hljs-keyword">int</span>)(Math.random()*<span class="hljs-number">10</span>);
-        EndY = StartY + (<span class="hljs-keyword">int</span>)(Math.random()*<span class="hljs-number">31</span>)-<span class="hljs-number">15</span>;
-        line(StartX, StartY, EndX, EndY);
-        <span class="hljs-comment">//Down</span>
-        line(EndX, EndY, EndX, <span class="hljs-number">600</span>);
-        line((StartX+EndX)/<span class="hljs-number">2</span>, (StartY+EndY)/<span class="hljs-number">2</span>, (StartX+EndX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
-        line((((StartX+EndX)/<span class="hljs-number">2</span>)+StartX)/<span class="hljs-number">2</span>, (((StartY+EndY)/<span class="hljs-number">2</span>)+StartY)/<span class="hljs-number">2</span>, (((StartX+EndX)/<span class="hljs-number">2</span>)+StartX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
-        line((((StartX+EndX)/<span class="hljs-number">2</span>)+EndX)/<span class="hljs-number">2</span>, (((StartY+EndY)/<span class="hljs-number">2</span>)+EndY)/<span class="hljs-number">2</span>, (((StartX+EndX)/<span class="hljs-number">2</span>)+EndX)/<span class="hljs-number">2</span>, <span class="hljs-number">600</span>);
-        <span class="hljs-comment">//Right</span>
-        <span class="hljs-comment">//line(EndX, EndY, 600, EndY);</span>
-        <span class="hljs-comment">//line((StartX+EndX)/2, (StartY+EndY)/2, 600, (StartY+EndY)/2);</span>
-        <span class="hljs-comment">//line((((StartX+EndX)/2)+StartX)/2, (((StartY+EndY)/2)+StartY)/2, 600, (((StartY+EndY)/2)+StartY)/2);</span>
-        <span class="hljs-comment">//line((((StartX+EndX)/2)+EndX)/2, (((StartY+EndY)/2)+EndY)/2, 600, (((StartY+EndY)/2)+EndY)/2);</span>
-        StartX = EndX;
-        StartY = EndY;
+  void move()
+  {
+    Position close = new Position(1600, 1600);
+    float dclose = sqrt(close.getX()*close.getX()+close.getY()*close.getY());
+    ArrayList<Food> a = getArrayf();
+    for(int i = 0; i < getArrayf().size(); i++)
+    { 
+      int x = a.get(i).getPos().getX();
+      int y = a.get(i).getPos().getY();
+      int xDiff = x-p.getX();
+      int yDiff = y-p.getY();
+      float dfood = sqrt(xDiff*xDiff+yDiff*yDiff);
+      if(dfood < size/2)
+      {
+        a.get(i).newPos();
+        changeSize();
+      }
+      if(dfood < dclose)
+      {
+        close.changeX(xDiff);
+        close.changeY(yDiff);
+        dclose = dfood;
+      }
+    }
+    float angle;
+    if(close.getX()==0){
+      if(close.getY()>0){
+        angle = PI/2;
+      } else
+      {
+        angle = -PI/2;
+      }
+    } else
+    {
+      angle = atan(abs(close.getY())/abs(close.getX()));
+    }
+    if(close.getY()<0 && close.getX()<0)
+    {
+      angle += PI;
+    } 
+    else if (close.getY()<0 && close.getX()>0)
+    {
+      angle -= 2*angle;
+    } 
+    else if (close.getY()>0 && close.getX()<0)
+    {
+      angle = PI-angle;
+    }
+    p.changeX(p.getX()+(int)round(3*cos(angle)));
+    p.changeY(p.getY()+(int)round(3*sin(angle)));
+    fill(c);
+    ellipse(p.getX(), p.getY(), size, size);
+  }
+}
     }
 }
 </code></pre>
