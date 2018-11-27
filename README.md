@@ -11,7 +11,7 @@
 
 #### Reflections:
 ###### Webpage:
-*
+* 
 ###### Lightning:
 *
 ###### JSLightning:
@@ -24,9 +24,6 @@
 *
 ###### Starfield:
 *
-###### Misc:
-1.
-2.
 
 #### Code Example:
 ```Java
@@ -59,3 +56,6 @@ void direction()
     }
   }
 ```
+
+1.
+2.
