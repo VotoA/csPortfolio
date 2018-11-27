@@ -46,5 +46,9 @@ void direction()
     }
   }
 ```
+*
 
 #### Reflections
+1.
+2.
+3.
