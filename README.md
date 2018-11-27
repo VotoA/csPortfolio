@@ -57,7 +57,8 @@ void direction()
   }
 ```
 
-1.
-2.
+* The code above is from the the Chemotaxis program which I worked on independently. It shows a method from the Bacteria class in which an individual Bacteria object determines the direction to move in based on where the Food object is. The two main problems I had while creating this were primarily the sucessful implementation of the adaptable trigonometric equations, and secondarily streamlining the process. The first was difficult due to having to compensate for how Java took in values for the trigonometric equations and having to compensate for necessitating 360 degree movement of the object. These processes of compensation can be shown in the conditional statements in the method. The second problem was difficult, because it involved taking out certain functionalities and moving others from the method while keeping the main function of the program working. Evidence of this process isn't readily shown due to it mostly involving removing code, but, before the problem was dealt with, the method had about 60% more lines and did what is now done using 2 methods and some things which are no longer done.
 
 ###### Misc:
+*
+*
