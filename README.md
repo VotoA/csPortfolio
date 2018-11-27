@@ -9,6 +9,25 @@
 ##### [Northeastern University](https://docs.google.com/presentation/d/e/2PACX-1vRSWhHeVxREhqrWZYRBTPLhoSAa4oWYVoTR_yrK4-zmqprpj5gXilt8YTGcdqJFN1u6k2PypLda1qIM/pub?start=true&loop=true&delayms=15000)
 ##### [Starfield](https://votoa.github.io/starfield5)
 
+#### Reflections:
+###### Webpage:
+*
+###### Lightning:
+*
+###### JSLightning:
+*
+###### Dice
+*
+###### Chemotaxis
+*
+###### Northeastern University
+*
+###### Starfield:
+*
+###### Misc:
+1.
+2.
+
 #### Code Example:
 ```Java
 void direction()
@@ -40,22 +59,3 @@ void direction()
     }
   }
 ```
-
-#### Reflections:
-###### Webpage:
-*
-###### Lightning:
-*
-###### JSLightning:
-*
-###### Dice
-*
-###### Chemotaxis
-*
-###### Northeastern University
-*
-###### Starfield:
-*
-###### Misc:
-1.
-2.
