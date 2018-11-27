@@ -1,13 +1,12 @@
 # csPortfolio
 
-* WebPage [here](https://votoa.github.io/VotoTestWebPage/Testpage.html) - r66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666j
-fuycccccccccccccccccccccccccccccccccccccccc
-* Lightning [here](https://votoa.github.io/lightning2/) - 
-* JSLighting [here](https://votoa.github.io/lightning2/LightningP5/index.html) - 
-* Dice [here](https://votoa.github.io/dice3/) - 
-* Chemotaxis [here](https://votoa.github.io/chemotaxis4/) - 
-* Northeastern University [here](https://docs.google.com/presentation/d/e/2PACX-1vRSWhHeVxREhqrWZYRBTPLhoSAa4oWYVoTR_yrK4-zmqprpj5gXilt8YTGcdqJFN1u6k2PypLda1qIM/pub?start=true&loop=true&delayms=15000) - 
-* Starfield [here](https://votoa.github.io/starfield5) - 
+* WebPage [here](https://votoa.github.io/VotoTestWebPage/Testpage.html)
+* Lightning [here](https://votoa.github.io/lightning2/)
+* JSLighting [here](https://votoa.github.io/lightning2/LightningP5/index.html)
+* Dice [here](https://votoa.github.io/dice3/)
+* Chemotaxis [here](https://votoa.github.io/chemotaxis4/)
+* Northeastern University [here](https://docs.google.com/presentation/d/e/2PACX-1vRSWhHeVxREhqrWZYRBTPLhoSAa4oWYVoTR_yrK4-zmqprpj5gXilt8YTGcdqJFN1u6k2PypLda1qIM/pub?start=true&loop=true&delayms=15000)
+* Starfield [here](https://votoa.github.io/starfield5)
 
 ```Java
 void direction()
