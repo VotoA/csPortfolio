@@ -21,7 +21,7 @@
 
 #### Code Example:
 ```Java
-void direction()
+void getAngle()
   {
     Food a = getFood();
     int xDiff = a.getX()-x;
