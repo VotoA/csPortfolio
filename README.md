@@ -8,17 +8,21 @@
 ##### [Collections Labs](https://github.com/VotoA/Collections)
 ##### [Stacks and Queues Labs](https://github.com/VotoA/Stacks-and-Queues)
 ##### [Node Data Structures](https://github.com/VotoA/Node-Data-Structures)
-##### [Snake](https://github.com/VotoA/Snake)
+##### [Snake AI](https://github.com/VotoA/Snake)
 
 #### Reflections:
 ###### Webpage:
-* This project is a webpage designd using HTML and CSS which shows off several photos that I personally took several years ago. This was my first experience using HTML and CSS and I feel that it has given me a solid base to learn the languages off of, but, at the time of writing this, I still don't understand the mechanics either language.
+* This project is a webpage designd using HTML and CSS which shows off several photos that I personally took several years ago. This was my first experience using HTML and CSS and I feel that it has given me a solid base to learn the languages off of, but, at the time of writing this, I still don't understand the mechanics of either language.
 ###### Lightning:
 * This project is a Java graphics program which demonstrates the use of the random class, basic 2D graphics, and a timer. It was mostly a review for the first two aspects mentioned, but the program especially helped to show me how to use a timer.
 ###### Chemotaxis
-* This project was an excercise in multiple custom object use and how they can interact, and adaptable and complicated math within a Java program. This project actually helped me to learn to streamline my programs. The first version was too resource intensive to run embedded in a website so it forced me to cut down on it's memory usage.
+* This project was an exercise in multiple custom object use and how they can interact, and adapt. This project actually helped me to learn to streamline my programs. The first version was too resource intensive to run embedded in a website so it forced me to cut down on it's memory usage.
 ###### Starfield:
 * This project was another review of using objects in conjunction with graphics. It also featured the use of an interface which was my first sucessful use of one. This greatly helped me to understand the relationship between interfaces and objects.
+###### Tarantino Runner:
+* This project was an exercise in large data analysis. It primarily demonstrates a ground-up built UI as well as multiple forms of data analysis.
+###### Snake AI
+* This program was a large step forward in terms of the knowledge I gained from it. It is the first program that I coded using Python, as well as the first time I explored building and using any type of machine learning.
 
 #### Code Example:
 ```Python
