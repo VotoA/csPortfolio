@@ -21,35 +21,58 @@
 * This project was another review of using objects in conjunction with graphics. It also featured the use of an interface which was my first sucessful use of one. This greatly helped me to understand the relationship between interfaces and objects.
 
 #### Code Example:
-```Java
-void getAngle()
-  {
-    Food a = getFood();
-    int xDiff = a.getX()-x;
-    int yDiff = a.getY()-y;
-    dfood = sqrt(xDiff*xDiff+yDiff*yDiff);
-    if (xDiff==0) {
-      if (yDiff>0) {
-        angle = PI/2;
-      } else
-      {
-        angle = -PI/2;
-      }
-    } else
-    {
-      angle = atan(abs(yDiff)/abs(xDiff));
-    }
-    if (yDiff<0 && xDiff<0)
-    {
-      angle += PI;
-    } else if (yDiff<0 && xDiff>0)
-    {
-      angle -= 2*angle;
-    } else if (yDiff>0 && xDiff<0)
-    {
-      angle = PI-angle;
-    }
-  }
+```Python
+class Neural_Network:
+	def __init__(self, inputSize, outputSize, hiddenLayerCount, hiddenLayerSize, weights, mutateRate):
+		self.inputSize = inputSize
+		self.outputSize = outputSize
+		self.hiddenLayerCount = hiddenLayerCount
+		self.hiddenLayerSize = hiddenLayerSize
+		self.weights = weights
+		self.mutateRate = mutateRate
+	def sigmoid(self, x):
+		return (1/(1+math.exp(-x)))
+	def evaluateNode(self, node, layer, inputs):
+		count = 0
+		value = 0
+		for input in inputs:
+			value+=input*self.weights[layer][node][count]
+			count+=1
+		return self.sigmoid(value)
+	def evaluateLayer(self, layer, inputs):
+		output = []
+		for node in range(self.hiddenLayerSize):
+			output.append(self.evaluateNode(node, layer, inputs))
+		return output	
+	def evaluate(self, inputs):
+		finalInputs = inputs
+		for layer in range(self.hiddenLayerCount):
+			finalInputs = self.evaluateLayer(layer, finalInputs)
+		output = []
+		for node in range(self.outputSize):
+			count = 0
+			value = 0
+			for input in finalInputs:
+				value += input*self.weights[-1][node][count]
+				count += 1
+			output.append(self.sigmoid(value))
+		return output
+	def mutate(self):
+		for layer in range(self.hiddenLayerCount):
+			for node in range(self.hiddenLayerSize):
+				for weight in range(len(self.weights[layer][node])):
+					self.weights[layer][node][weight] += random.uniform(-1.0, 1.0)*self.mutateRate
+		for node in range(self.outputSize):
+			for weight in range(len(self.weights[-1][node])):
+				self.weights[-1][node][weight] += random.uniform(-1.0, 1.0)*self.mutateRate
+	def randomizeWeights(self):
+		for layer in range(self.hiddenLayerCount):
+			for node in range(self.hiddenLayerSize):
+				for weight in range(len(self.weights[layer][node])):
+					self.weights[layer][node][weight] = random.uniform(-1.0, 1.0)
+		for node in range(self.outputSize):
+			for weight in range(len(self.weights[-1][node])):
+				self.weights[-1][node][weight] = random.uniform(-1.0, 1.0)
 ```
 
 * The code above is from the the Chemotaxis program which I worked on independently. It shows a method from the Bacteria class in which an individual Bacteria object determines the direction to move in based on where the Food object is. The two main problems I had while creating this were primarily the sucessful implementation of the adaptable trigonometric equations, and secondarily streamlining the process. The first was difficult due to having to compensate for how Java took in values for the trigonometric equations and having to compensate for necessitating 360 degree movement of the object. These processes of compensation can be shown in the conditional statements in the method. The second problem was difficult, because it involved taking out certain functionalities and moving others from the method while keeping the main function of the program working. Evidence of this process isn't readily shown due to it mostly involving removing code, but, before the problem was dealt with, the method had about 60% more lines and did what is now done using 2 methods and some things which are no longer done.
