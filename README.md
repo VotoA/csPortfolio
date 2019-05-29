@@ -22,7 +22,7 @@
 ###### Tarantino Runner:
 * This project was an exercise in large data analysis. It primarily demonstrates a ground-up built UI as well as multiple forms of data analysis.
 ###### Collections:
-* These Labs 
+* These Labs served as an
 ###### Stacks and Queues:
 * 
 ###### Node Data Structures:
