@@ -4,7 +4,6 @@
 ##### [WebPage](https://votoa.github.io/VotoTestWebPage/Testpage.html)
 ##### [Lightning](https://votoa.github.io/lightning2/)
 ##### [Chemotaxis](https://votoa.github.io/chemotaxis4/)
-##### [Northeastern University](https://docs.google.com/presentation/d/e/2PACX-1vRSWhHeVxREhqrWZYRBTPLhoSAa4oWYVoTR_yrK4-zmqprpj5gXilt8YTGcdqJFN1u6k2PypLda1qIM/pub?start=true&loop=true&delayms=15000)
 ##### [Starfield](https://votoa.github.io/starfield5/)
 
 #### Reflections:
@@ -14,8 +13,6 @@
 * This project is a Java graphics program which demonstrates the use of the random class, basic 2D graphics, and a timer. It was mostly a review for the first two aspects mentioned, but the program especially helped to show me how to use a timer.
 ###### Chemotaxis
 * This project was an excercise in multiple custom object use and how they can interact, and adaptable and complicated math within a Java program. This project actually helped me to learn to streamline my programs. The first version was too resource intensive to run embedded in a website so it forced me to cut down on it's memory usage.
-###### Northeastern University
-* This is a non-coding slide presentation which was given in conjunction with a verbal presentation. It is meant to inform about Northeastern University, and, in particular, their computer science program. The process of researching helped me to understand what paths were available in the computer science field both in education and research.
 ###### Starfield:
 * This project was another review of using objects in conjunction with graphics. It also featured the use of an interface which was my first sucessful use of one. This greatly helped me to understand the relationship between interfaces and objects.
 
