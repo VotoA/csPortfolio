@@ -7,7 +7,7 @@
 ##### [Tarantino Runner](https://github.com/VotoA/TarantinoRunner)
 ##### [Collections Labs](https://github.com/VotoA/Collections)
 ##### [Stacks and Queues Labs](https://github.com/VotoA/Stacks-and-Queues)
-##### [Node Data Structures](https://github.com/VotoA/Node-Data-Structures)
+##### [Node Data Structures Labs](https://github.com/VotoA/Node-Data-Structures)
 ##### [Snake AI](https://github.com/VotoA/Snake)
 
 #### Reflections:
@@ -21,7 +21,13 @@
 * This project was another review of using objects in conjunction with graphics. It also featured the use of an interface which was my first sucessful use of one. This greatly helped me to understand the relationship between interfaces and objects.
 ###### Tarantino Runner:
 * This project was an exercise in large data analysis. It primarily demonstrates a ground-up built UI as well as multiple forms of data analysis.
-###### Snake AI
+###### Collections:
+* These Labs 
+###### Stacks and Queues:
+* 
+###### Node Data Structures:
+* 
+###### Snake AI:
 * This program was a large step forward in terms of the knowledge I gained from it. It is the first program that I coded using Python, as well as the first time I explored building and using any type of machine learning.
 
 #### Code Example:
