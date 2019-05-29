@@ -22,11 +22,11 @@
 ###### Tarantino Runner:
 * This project was an exercise in large data analysis. It primarily demonstrates a ground-up built UI as well as multiple forms of data analysis.
 ###### Collections:
-* These Labs served as an
+* These labs served as a review of basic Java data structures, and an introduction for more complicated ones such as Maps and Sets.
 ###### Stacks and Queues:
-* 
+* These labs served as a introduction to the Java data structures: Stacks and Queues. 
 ###### Node Data Structures:
-* 
+* These labs served as an introduction to Trees and Linked Lists, but they also served as difficult practice in tracing code.
 ###### Snake AI:
 * This program was a large step forward in terms of the knowledge I gained from it. It is the first program that I coded using Python, as well as the first time I explored building and using any type of machine learning.
 
