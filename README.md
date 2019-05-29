@@ -2,7 +2,6 @@
 
 #### Projects:
 ##### [WebPage](https://votoa.github.io/VotoTestWebPage/Testpage.html)
-##### [Lightning](https://votoa.github.io/lightning2/)
 ##### [Chemotaxis](https://votoa.github.io/chemotaxis4/)
 ##### [Starfield](https://votoa.github.io/starfield5/)
 ##### [Tarantino Runner](https://github.com/VotoA/TarantinoRunner)
