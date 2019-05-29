@@ -8,7 +8,7 @@
 ##### [Collections Labs](https://github.com/VotoA/Collections)
 ##### [Stacks and Queues Labs](https://github.com/VotoA/Stacks-and-Queues)
 ##### [Node Data Structures Labs](https://github.com/VotoA/Node-Data-Structures)
-##### [Snake AI](https://github.com/VotoA/Snake)
+##### [Snake Evolution](https://github.com/VotoA/Snake)
 
 #### Reflections:
 ###### Webpage:
